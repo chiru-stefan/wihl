@@ -18,7 +18,9 @@
     <script type="application/ld+json">
         {"@type":"WebSite","headline":"Welcome to GitHub Pages","url":"https://chiru-stefan.github.io/wihl/","name":"wihl","@context":"https://schema.org"}</script>
     <!-- End Jekyll SEO tag -->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
@@ -39,7 +41,7 @@
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 18px;
             color: #818181;
             display: block;
             transition: 0.3s;
@@ -48,6 +50,11 @@
         .sidenav a:hover {
             color: #f1f1f1;
         }
+
+        .sidenav .dropdown-menu a:hover {
+            color: #232323;
+        }
+
 
         .sidenav .closebtn {
             position: absolute;
@@ -70,27 +77,28 @@
 </head>
 <body>
 
+
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             R lang
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="intro_data_prob_project.html"> Project Introduction to Probability and Data </a>
         </div>
     </div>
+
+
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
 </div>
 
 <div id="main">
-    <h2>Sidenav Push Example</h2>
-    <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <h1> Test recommit </h1>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
     <header>
         <div class="container">
